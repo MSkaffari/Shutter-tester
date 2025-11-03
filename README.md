@@ -51,14 +51,14 @@ cd raspberry-pi-shutter-tester
 Run the live monitor to see real-time ADC readings:
 
 ```bash
-python3 live_monitor.py
+python3 src/live_monitor.py
 ```
 
 ### Shutter Speed Tester
 Run the main shutter tester program:
 
 ```bash
-python3 shutter_tester.py
+python3 src/shutter_tester.py
 ```
 
 1. **Calibration**: Follow prompts to set reference values for closed/open shutter
