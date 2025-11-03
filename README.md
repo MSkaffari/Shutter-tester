@@ -74,6 +74,10 @@ The output shows:
 
 The photoresistor changes resistance based on light exposure. When the camera shutter opens, light hits the photoresistor, reducing its resistance and lowering the ADC reading. When closed, the resistance increases, raising the ADC value.
 
+## Limitations
+
+ADS1115 provides 860 samples per second so the fastest shutter speed you can measure is 1/860. Roughly 1/1000. 
+
 ## Contributing
 
 Feel free to submit issues and pull requests to improve this project.
