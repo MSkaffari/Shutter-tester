@@ -2,6 +2,9 @@
 
 A Raspberry Pi-based tool for testing camera shutter speeds using a photoresistor circuit and ADS1115 ADC converter.
 
+## Version one has a flaw
+This version of the shutter tester uses photo resistor that is not fast enough to get a meaningful reading. I'm switchjing to using LM393 Dual Comparator and Photodiode. I'll update the project once my new hardware build is ready.
+
 ## Hardware Requirements
 
 - Raspberry Pi 3 (or newer)
@@ -64,6 +67,15 @@ python3 src/shutter_tester.py
 1. **Calibration**: Follow prompts to set reference values for closed/open shutter
 2. **Measurement**: Program continuously measures shutter duration and displays closest standard shutter speed
 3. Press `Ctrl+C` to stop
+
+### Shutter Profile Recorder
+Record detailed shutter opening/closing profile:
+
+```bash
+python3 src/shutter_profile.py
+```
+
+Captures complete shutter cycle with timing and ADC values showing ramp up/down behavior.
 
 The output shows:
 - **High values (near 32767)**: Shutter closed (dark)
