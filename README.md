@@ -3,7 +3,7 @@
 A Raspberry Pi-based tool for testing camera shutter speeds using a photoresistor circuit and ADS1115 ADC converter.
 
 ## Version one has a flaw
-This version of the shutter tester uses photo resistor that is not fast enough to get a meaningful reading. I'm switchjing to using LM393 Dual Comparator and Photodiode. I'll update the project once my new hardware build is ready.
+This version of the shutter tester uses photo resistor that is not fast enough to get a meaningful reading. I'm switching to using LM393 Dual Comparator and Photodiode. I'll update the project once my new hardware build is ready.
 
 ## Hardware Requirements
 
